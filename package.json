@@ -20,6 +20,6 @@
     "ocaml": "~4.8.1000"
   },
   "resolutions": {
-    "hello-reason-lib": "esy-ocaml/hello-reason#903f528740c6689a"
+    "hello-reason-lib": "link:../hello-reason"
   }
 }

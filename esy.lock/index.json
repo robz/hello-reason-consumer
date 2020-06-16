@@ -1,5 +1,5 @@
 {
-  "checksum": "298a308772328da1d7b1461bf55de695",
+  "checksum": "44686bdd3213f4b1406ea5fbe4e65a0f",
   "root": "hello-reason-consumer@link-dev:./package.json",
   "node": {
     "ocaml@4.8.1000@d41d8cd9": {
@@ -16,15 +16,11 @@
       "dependencies": [],
       "devDependencies": []
     },
-    "hello-reason-lib@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9": {
-      "id":
-        "hello-reason-lib@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9",
+    "hello-reason-lib@link:../hello-reason": {
+      "id": "hello-reason-lib@link:../hello-reason",
       "name": "hello-reason-lib",
-      "version": "github:esy-ocaml/hello-reason#903f528740c6689a",
-      "source": {
-        "type": "install",
-        "source": [ "github:esy-ocaml/hello-reason#903f528740c6689a" ]
-      },
+      "version": "link:../hello-reason",
+      "source": { "type": "link", "path": "../hello-reason" },
       "overrides": [],
       "dependencies": [
         "ocaml@4.8.1000@d41d8cd9", "@reason-native/pastel@0.3.0@d41d8cd9",
@@ -44,8 +40,7 @@
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.8.1000@d41d8cd9",
-        "hello-reason-lib@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9",
+        "ocaml@4.8.1000@d41d8cd9", "hello-reason-lib@link:../hello-reason",
         "@reason-native/console@0.1.0@d41d8cd9",
         "@opam/dune@opam:2.5.0@aef1678b", "@esy-ocaml/reason@3.5.2@d41d8cd9"
       ],

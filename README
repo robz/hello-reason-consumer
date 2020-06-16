@@ -1,3 +1,36 @@
+Editing hello-reason to change hello-reason-lib name change:
+
+diff --git a/hello-reason.opam b/hello-reason.opam
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/lib/dune b/lib/dune
+index 990e1f6..86ef888 100644
+--- a/lib/dune
++++ b/lib/dune
+@@ -2,5 +2,5 @@
+  (name lib)
+  (flags
+   (-w -40 -w +26))
+- (public_name hello-reason)
++ (public_name hello-reason-lib)
+  (libraries pastel.lib))
+diff --git a/package.json b/package.json
+index 316d4ff..b4e31ba 100644
+--- a/package.json
++++ b/package.json
+@@ -4,7 +4,7 @@
+   "description": "Example Reason Esy Project",
+   "license": "MIT",
+   "esy": {
+-    "build": "dune build -p #{self.name}",
++    "build": "dune build -p hello-reason-lib",
+     "buildDev": "refmterr dune build --promote-install-files --root . --only-package #{self.name}",
+     "NOTE": "Optional release Section. Customizes result of `esy release`",
+     "release": {
+
+
+---
+
 bash-3.2$ esy install && esy build && esy test
 info install 0.6.4 (using package.json)
 info esy build 0.6.4 (using package.json)
