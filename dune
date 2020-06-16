@@ -1,3 +1,3 @@
 (executable 
   (name hello) 
-  (libraries lib console.lib))
+  (libraries hello-reason console.lib))
