@@ -14,12 +14,12 @@
     "@reason-native/console": "*",
     "@esy-ocaml/reason": ">= 3.4.0 < 3.6.0",
     "ocaml": "~4.8.1000",
-    "hello-reason": "*"
+    "hello-reason-lib": "*"
   },
   "devDependencies": {
     "ocaml": "~4.8.1000"
   },
   "resolutions": {
-    "hello-reason": "esy-ocaml/hello-reason#903f528740c6689a"
+    "hello-reason-lib": "esy-ocaml/hello-reason#903f528740c6689a"
   }
 }

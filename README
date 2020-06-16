@@ -1,6 +1,22 @@
 bash-3.2$ esy install && esy build && esy test
 info install 0.6.4 (using package.json)
 info esy build 0.6.4 (using package.json)
+File "dune", line 3, characters 13-29:
+3 |   (libraries hello-reason-lib console.lib))
+                 ^^^^^^^^^^^^^^^^
+Error: Library "hello-reason-lib" not found.
+Hint: try: dune external-lib-deps --missing hello.exe
+error: command failed: 'dune' 'build' 'hello.exe' (exited with 1)
+esy-build-package: exiting with errors above...
+error: build failed with exit code: 1
+  
+esy: exiting due to errors above
+
+----
+
+bash-3.2$ esy install && esy build && esy test
+info install 0.6.4 (using package.json)
+info esy build 0.6.4 (using package.json)
 File "dune", line 3, characters 13-16:
 3 |   (libraries lib console.lib))
                  ^^^

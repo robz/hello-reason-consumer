@@ -1,5 +1,5 @@
 {
-  "checksum": "1126f093895557f58f6335dbe6010352",
+  "checksum": "298a308772328da1d7b1461bf55de695",
   "root": "hello-reason-consumer@link-dev:./package.json",
   "node": {
     "ocaml@4.8.1000@d41d8cd9": {
@@ -16,6 +16,23 @@
       "dependencies": [],
       "devDependencies": []
     },
+    "hello-reason-lib@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9": {
+      "id":
+        "hello-reason-lib@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9",
+      "name": "hello-reason-lib",
+      "version": "github:esy-ocaml/hello-reason#903f528740c6689a",
+      "source": {
+        "type": "install",
+        "source": [ "github:esy-ocaml/hello-reason#903f528740c6689a" ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.8.1000@d41d8cd9", "@reason-native/pastel@0.3.0@d41d8cd9",
+        "@reason-native/console@0.1.0@d41d8cd9",
+        "@opam/dune@opam:2.5.0@aef1678b", "@esy-ocaml/reason@3.5.2@d41d8cd9"
+      ],
+      "devDependencies": [ "ocaml@4.8.1000@d41d8cd9" ]
+    },
     "hello-reason-consumer@link-dev:./package.json": {
       "id": "hello-reason-consumer@link-dev:./package.json",
       "name": "hello-reason-consumer",
@@ -28,24 +45,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.8.1000@d41d8cd9",
-        "hello-reason@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9",
-        "@reason-native/console@0.1.0@d41d8cd9",
-        "@opam/dune@opam:2.5.0@aef1678b", "@esy-ocaml/reason@3.5.2@d41d8cd9"
-      ],
-      "devDependencies": [ "ocaml@4.8.1000@d41d8cd9" ]
-    },
-    "hello-reason@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9": {
-      "id":
-        "hello-reason@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9",
-      "name": "hello-reason",
-      "version": "github:esy-ocaml/hello-reason#903f528740c6689a",
-      "source": {
-        "type": "install",
-        "source": [ "github:esy-ocaml/hello-reason#903f528740c6689a" ]
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.8.1000@d41d8cd9", "@reason-native/pastel@0.3.0@d41d8cd9",
+        "hello-reason-lib@github:esy-ocaml/hello-reason#903f528740c6689a@d41d8cd9",
         "@reason-native/console@0.1.0@d41d8cd9",
         "@opam/dune@opam:2.5.0@aef1678b", "@esy-ocaml/reason@3.5.2@d41d8cd9"
       ],
