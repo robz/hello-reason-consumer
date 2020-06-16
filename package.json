@@ -1,0 +1,25 @@
+{
+  "name": "hello-reason-consumer",
+  "version": "0.1.0",
+  "description": "consumes library from another package",
+  "license": "MIT",
+  "esy": {
+    "build": "dune build hello.exe"
+  },
+  "scripts": {
+    "test": "esy dune exec ./hello.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@reason-native/console": "*",
+    "@esy-ocaml/reason": ">= 3.4.0 < 3.6.0",
+    "ocaml": "~4.8.1000",
+    "hello-reason": "*"
+  },
+  "devDependencies": {
+    "ocaml": "~4.8.1000"
+  },
+  "resolutions": {
+    "hello-reason": "esy-ocaml/hello-reason#903f528740c6689a"
+  }
+}
